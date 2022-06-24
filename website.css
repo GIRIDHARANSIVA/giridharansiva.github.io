@@ -1,0 +1,438 @@
+/* RESPONSE design **/
+@media screen and (max-width:1200px){
+	.title,.title p,.title2,.menu,.menu ul li,.name,.name h3,.name,.image,.home,.home_name,.home p,.home img,.Lets_start,.Lets_start a,.about_name,.about_me,.about_me p,.about_me img,.read_more,.read_more a,.text,.col-md-4,.input-group-text,.form-control,.btn-primary,.resume a,{width: 100%;
+		text-align: center;
+		display: flex;
+	}
+	.Lets_start a{
+		margin-top: 100px;
+	}
+	.Lets_start a,.read_more a,.resume a{
+		position: absolute;
+		width: 150px;
+	}
+	.home img,.about_me img,.profile img,.gif{
+		opacity: 0;
+	}
+}
+@media screen and (max-width:576px){
+	.title,.title p,.title2,.menu,.menu ul li,.name,.name h3,.name,.image,.home,.home_name,.home p,.home img,.Lets_start,.Lets_start a,.about_name,.about_me,.about_me p,.about_me img,.read_more,.read_more a,.text,.col-md-4,.input-group-text,.form-control,.btn-primary,.resume a{width: 100%;
+		text-align: center;
+		display: flex;
+	}
+	.Lets_start a,.read_more a,.resume a{
+		position: absolute;
+		width: 150px;
+	}
+	.home img,.about_me img,.profile img{
+		opacity: 0;
+	}
+}
+/* START design 1270px 92.8*/
+body{
+	position: relative;
+	width: 98%;
+	position: absolute;
+	display: inline-block;
+	overflow: auto;
+	height: 1200px;
+}
+
+.title{
+	display: flex;
+	font-family: monospace;
+	padding: 5px;
+}
+.title P{
+	color: white;
+	background: red;
+	width: 106%;
+	margin-left: -7px;
+	margin-top: -8px;
+	padding: 6px;
+	padding-left: 35px;
+	font-size:20px;
+	transition: all 0.25s linear;
+	overflow: hidden;
+}
+
+.title p:hover{
+	color: yellow;
+}
+.title2 span a:hover{
+	color: yellow;
+}
+.title2 span a{
+	color: white;
+	text-decoration: none;
+
+}
+.title2 p{
+	margin-right: 0px;
+	padding-right: 35px;
+}
+
+/* End START design */
+
+/*................................................................*/
+
+/* NAME design */
+.name{
+	position: relative;
+	display: flex;
+	padding-left: 50px ;
+	transition: 0.2s;
+}
+.name:hover{
+	transform:scale(1.02);
+	z-index: 2;
+}
+
+.name p{
+	font-size: 47px;
+	margin-top: -7px;
+	padding-left: 45px;
+	color: darkblue;
+	font-family: Algerian;
+}
+.name h3{
+	margin-top:47px;
+	margin-left: -130px;
+	color: gray;
+	font-size:20px;
+}
+/* End NAME design */
+
+/*................................................................*/
+
+/* MENU design */
+.menu{
+	text-align: center;
+	width: 100%;
+	top: 0;
+	margin-left: 15px;
+	margin-top: 10px;
+}
+
+.menu a{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	color: white;
+	display: block;
+	padding: 0px 60px;
+
+}
+.menu ul{
+	display: inline-block;
+	transform: skew(-20deg);
+	border-radius: 40px;
+
+}
+.menu ul li{
+	background:darkblue;
+	float: left;
+	font-size: 21px;
+	padding: 5px;
+	border: 1.5px solid brown;
+	padding-left: 15px;
+	justify-content: center;
+	box-shadow: 1.95px 1.95px 1.3px rgba(0, 0, 0, 1);
+	transition: all 0.2s linear;
+	font-family:Arial Unicode MS ;
+}
+.menu ul li:hover{
+	background: red;
+}
+
+/* End MENU design */
+
+/*................................................................*/
+
+/*	IMAGE design */
+.image{
+	display: flex;
+	width: 1150px;
+	margin-left: 89px;
+	margin-top: 130px;
+	overflow: hidden;
+	transition: 0.2s;
+	box-shadow: 0 0 20px 2px rgba(0, 0, 0, .5);
+}
+.image:hover{
+	transform:scale(1.05);
+	z-index: 2;
+}
+/*................................................................*/
+
+/*	HOME design */
+.home_name{
+	font-size: 45px;
+	margin-top: 70px;
+	margin-left: 100px;
+	font-family: Calibri;
+	color: gray;
+	animation: left 2s ease-in-out;
+
+}
+.home{
+	display: flex;
+	padding: 0px;
+}
+.home p{
+	width: 500px;
+	text-align: justify;
+	margin-left: 100px;
+	font-size: 25px;
+	margin-top:5px ;
+	word-spacing:0px;
+	font-family: Bahnschrift Light;
+	color: gray;
+	animation: left 2s ease-in-out;
+}
+
+.home img{
+	margin-top: -100px;
+	overflow: hidden;
+	animation: right 2s ease-in-out;
+	transition: 0.2s;
+}
+.home img:hover{
+	transform:scale(1.1);
+	z-index: 2;
+}
+@keyframes right {
+	0%{
+		transform: translateX(100%);
+	}
+}
+@keyframes left {
+	0%{
+		transform: translateX(-100%);
+	}
+}
+.Lets_start{
+	margin-top: -115px;
+	margin-left: 100px;
+	transition: all 0.2s linear;
+	animation: left 2s ease-in-out;
+}
+.Lets_start a{
+		padding: 10px 25px;
+		overflow: hidden;
+		position: relative;
+		color: #000;
+		font:  500 22px 'poppins',sans-serif;
+		text-decoration: none;
+		white-space: nowrap;
+		border-radius: 60px;
+		background:red;
+		box-shadow: rgba(0,0,0,0.5)0px 20px 40px -7px;
+		color: white;
+		transition: all 0.2s linear;
+		background-image: linear-gradient(315deg,#7f53ae 10%,#647dee 60%);
+		
+}
+
+.Lets_start a:hover{
+	background-image: linear-gradient(315deg,#f7b733 20%,#fc4a1a 90%);
+	transition: all 0.2s linear;
+	color: white;
+}
+/*................................................................*/
+
+/*	ABOUT ME design */
+.about_name{
+	font-size: 70px;
+	margin-top:100px;
+	margin-left: 100px;
+	font-family: Bitstream Vera Sans Mono;
+	color: darkblue;
+	animation: left1 2.5s ease-in-out;
+}
+@keyframes left1 {
+	0%{
+		transform: translateX(-100%);
+	}
+}
+.about_me{
+	display: flex;
+	width: 90%;
+	
+}
+.about_me p{
+	text-align: justify;
+	margin-left: 100px;
+	font-size: 25px;
+	margin-top:5px ;
+	word-spacing:0px;
+	font-family: Bahnschrift Light;
+	color: gray;
+	padding-right: 40px;
+		width:550px;
+		animation: left 2s ease-in-out;
+}
+.about_me img{
+	margin-top: -220px;
+	overflow: hidden;
+	animation: right 3s ease-in-out;
+	transition: 0.2s;
+}
+.about_me img:hover{
+	transform:scale(1.05);
+	z-index: 2;
+}
+.read_more{
+	margin-top: -20px;
+	margin-left: 100px;
+	transition: all 0.2s linear;
+	animation: left 2s ease-in-out;
+}
+.read_more a{
+padding: 10px 25px;
+overflow: hidden;
+position: relative;
+color: #000;
+font:  500 22px 'poppins',sans-serif;
+text-decoration: none;
+white-space: nowrap;
+border-radius: 60px;
+background:red;
+box-shadow: rgba(0,0,0,0.5)0px 20px 40px -7px;
+color: white;
+transition: all 0.2s linear;
+background-image: linear-gradient(315deg,#7f53ae 10%,#647dee 60%);
+
+}
+.read_more a:hover{
+	background-image: linear-gradient(315deg,#f7b733 20%,#fc4a1a 90%);
+	transition: all 0.2s linear;
+	color: white;
+}
+
+/*** contact *****/
+ .text{
+	margin-left: -400px;
+	animation: left 2s ease-in-out;
+}
+.col-md-4{
+	width: 100px;
+	margin-left: 400px;
+	animation: left 2s ease-in-out;
+}
+.input-group-text{
+	width: 100px;
+	font-size: 30px;
+	margin-left: -400px;
+	animation: left 2s ease-in-out;
+}
+.form-control{
+	width: 500px;
+	animation: left 2s ease-in-out;
+}
+.btn-primary{
+	font-size: 20px;
+	padding: 5px 25px;
+	margin-top: 20px;
+	background-image: linear-gradient(315deg,#7f53ae 10%,#647dee 60%);
+	border: none;
+	animation: left 2s ease-in-out;
+}
+.btn-primary:hover{
+	background-image: linear-gradient(315deg,#f7b733 20%,#fc4a1a 90%);
+	transition: all 0.2s linear;
+	color: white;
+}
+
+/****** PROFILE design******/
+.profile{
+	padding: 75px;
+}
+.resume a{
+	margin-left: 100px;
+	margin-top: 290px;
+	padding: 10px 25px;
+	overflow: hidden;
+	position: absolute;
+	color: #000;
+	font:  500 22px 'poppins',sans-serif;
+	text-decoration: none;
+	white-space: nowrap;
+	border-radius: 60px;
+	background:red;
+	box-shadow: rgba(0,0,0,0.5)0px 20px 40px -7px;
+	color: white;
+	transition: all 0.2s linear;
+	background-image: linear-gradient(315deg,#7f53ae 10%,#647dee 60%);
+	animation: right 3s ease-in-out;
+}
+.resume a:hover{
+	background-image: linear-gradient(315deg,#f7b733 20%,#fc4a1a 90%);
+	transition: all 0.2s linear;
+	color: white;
+}
+.profile img{
+	transition: 0.2s;
+	animation: left 3s ease-in-out;
+}
+.profile img:hover{
+	transform:scale(1.05);
+	z-index: 2;
+}
+.gif{
+	position: absolute;
+	margin-top: -440px;
+	margin-left: 705px;
+	animation: right 3s ease-in-out;
+}
+.profile p{
+	position: absolute;
+	margin-top: -450px;
+	margin-left: 625px;
+	font-size: 30px;
+	animation: right 3s ease-in-out;
+
+}
+/** SKILLS design */
+.skills a{
+	transition: box-shadow 0.3s ease-in-out;
+	animation: left 3s ease-in-out;
+	width: 250px;
+}
+.box{
+	width: 250px;
+	width: 200px;
+	margin: 0 10px;
+	display:inline-block;
+	flex-direction: column;
+	background: transparent;
+	transition: 0.2s;
+	box-shadow: 0 0 20px 2px rgba(0, 0, 0, .3);
+	
+}
+.box:hover{
+	transform:scale(1.2);
+	z-index: 2;
+}
+/* SOCIAL MEDIA design */
+.social_media{
+	margin: 0 auto;
+	font-size: 50px;
+	color: darkblue;
+}
+/* FOOTER design */
+.footer{
+	color: white;
+	position: relative;
+	padding: 10px;
+	width: 103.5%;
+	height: 50px;
+	background: red;
+	margin-left: -7px;
+	margin-top: 18px;
+	font-size:20px;
+	transition: all 0.25s linear;
+	overflow: hidden;
+}
+.footer p{
+}
