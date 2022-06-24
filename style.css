@@ -1,0 +1,45 @@
+h2,h3{
+    background:#363933; 
+    color:white;   
+}
+body{
+        padding:35px;    
+        width:900px;
+        height:1150px;
+        left:14%;
+        position:absolute;  
+        border:double;
+        top:50px;
+        bottom:50px;
+
+}
+h3{
+    position: sticky;
+}
+.back{
+    margin-top: 50px;
+}
+.back a{
+padding: 10px 25px;
+overflow: hidden;
+position: relative;
+color: #000;
+font:  500 22px 'poppins',sans-serif;
+text-decoration: none;
+white-space: nowrap;
+border-radius: 14px;
+background:red;
+box-shadow: rgba(0,0,0,0.5)0px 20px 40px -7px;
+color: white;
+transition: all 0.2s linear;
+background: black;
+}
+.back a:hover{
+    border: 3px solid black;
+    background: white;
+    color: #000;
+    transition: all 0.1s linear;
+}
+         
+
+
