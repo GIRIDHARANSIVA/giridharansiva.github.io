@@ -1,6 +1,6 @@
 /* RESPONSE design **/
 @media screen and (max-width:1200px){
-	.title,.title p,.title2,.menu,.menu ul li,.name,.name h3,.name,.image,.home,.home_name,.home p,.home img,.Lets_start,.Lets_start a,.about_name,.about_me,.about_me p,.about_me img,.read_more,.read_more a,.text,.col-md-4,.input-group-text,.form-control,.btn-primary,.resume a,{width: 100%;
+	.image,.title,.title p,.title2,.menu,.menu ul li,.name,.name h3,.name,.image,.home,.home_name,.home p,.home img,.Lets_start,.Lets_start a,.about_name,.about_me,.about_me p,.about_me img,.read_more,.read_more a,.text,.col-md-4,.input-group-text,.form-control,.btn-primary,.resume a,{width: 100%;
 		text-align: center;
 		display: flex;
 	}
@@ -11,9 +11,8 @@
 		position: absolute;
 		width: 150px;
 	}
-	.home img,.about_me img,.profile img,.gif{
-		opacity: 0;
-	}
+
+	
 }
 @media screen and (max-width:576px){
 	.title,.title p,.title2,.menu,.menu ul li,.name,.name h3,.name,.image,.home,.home_name,.home p,.home img,.Lets_start,.Lets_start a,.about_name,.about_me,.about_me p,.about_me img,.read_more,.read_more a,.text,.col-md-4,.input-group-text,.form-control,.btn-primary,.resume a{width: 100%;
@@ -29,13 +28,18 @@
 	}
 }
 /* START design 1270px 92.8*/
+*{
+	
+	
+}
 body{
 	position: relative;
-	width: 98%;
+	width: 100%;
 	position: absolute;
 	display: inline-block;
 	overflow: auto;
 	height: 1200px;
+	padding: 5px;
 }
 
 .title{
@@ -46,8 +50,8 @@ body{
 .title P{
 	color: white;
 	background: red;
-	width: 106%;
-	margin-left: -7px;
+	width: 100%;
+	margin-left: -3px;
 	margin-top: -8px;
 	padding: 6px;
 	padding-left: 35px;
@@ -93,7 +97,7 @@ body{
 	margin-top: -7px;
 	padding-left: 45px;
 	color: darkblue;
-	font-family: Algerian;
+	//font-family: Algerian;
 }
 .name h3{
 	margin-top:47px;
@@ -110,7 +114,7 @@ body{
 	text-align: center;
 	width: 100%;
 	top: 0;
-	margin-left: 15px;
+	
 	margin-top: 10px;
 }
 
@@ -127,7 +131,6 @@ body{
 	display: inline-block;
 	transform: skew(-20deg);
 	border-radius: 40px;
-
 }
 .menu ul li{
 	background:darkblue;
@@ -156,7 +159,7 @@ body{
 	margin-left: 89px;
 	margin-top: 130px;
 	overflow: hidden;
-	transition: 0.2s;
+	transition: 0.5s;
 	box-shadow: 0 0 20px 2px rgba(0, 0, 0, .5);
 }
 .image:hover{
@@ -193,12 +196,11 @@ body{
 
 .home img{
 	margin-top: -100px;
-	overflow: hidden;
-	animation: right 2s ease-in-out;
-	transition: 0.2s;
+
 }
 .home img:hover{
-	transform:scale(1.1);
+	transition: 0.5s;
+	transform:scale(1.05);
 	z-index: 2;
 }
 @keyframes right {
@@ -230,6 +232,7 @@ body{
 		box-shadow: rgba(0,0,0,0.5)0px 20px 40px -7px;
 		color: white;
 		transition: all 0.2s linear;
+		transition: 0.5s;
 		background-image: linear-gradient(315deg,#7f53ae 10%,#647dee 60%);
 		
 }
@@ -239,6 +242,21 @@ body{
 	transition: all 0.2s linear;
 	color: white;
 }
+
+.up{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	position: fixed;
+	left: 1300px;
+	top: 550px;
+	color:darkblue ;
+}
+.up:hover{
+	transition: all 0.2s linear;
+	color: red;
+}
+
 /*................................................................*/
 
 /*	ABOUT ME design */
@@ -273,10 +291,10 @@ body{
 		animation: left 2s ease-in-out;
 }
 .about_me img{
+	transition: 0.5s;
 	margin-top: -220px;
 	overflow: hidden;
-	animation: right 3s ease-in-out;
-	transition: 0.2s;
+	
 }
 .about_me img:hover{
 	transform:scale(1.05);
@@ -346,10 +364,13 @@ background-image: linear-gradient(315deg,#7f53ae 10%,#647dee 60%);
 
 /****** PROFILE design******/
 .profile{
-	padding: 75px;
+	width: 100%;
+	/* padding: 75px; */
+	justify-content: center;
+	align-items: center;
 }
 .resume a{
-	margin-left: 100px;
+	margin-left: 200px;
 	margin-top: 290px;
 	padding: 10px 25px;
 	overflow: hidden;
@@ -372,8 +393,8 @@ background-image: linear-gradient(315deg,#7f53ae 10%,#647dee 60%);
 	color: white;
 }
 .profile img{
-	transition: 0.2s;
-	animation: left 3s ease-in-out;
+	left: 100px;
+	transition: 0.5s;
 }
 .profile img:hover{
 	transform:scale(1.05);
@@ -382,13 +403,13 @@ background-image: linear-gradient(315deg,#7f53ae 10%,#647dee 60%);
 .gif{
 	position: absolute;
 	margin-top: -440px;
-	margin-left: 705px;
+	margin-left: 805px;
 	animation: right 3s ease-in-out;
 }
 .profile p{
 	position: absolute;
 	margin-top: -450px;
-	margin-left: 625px;
+	margin-left: 725px;
 	font-size: 30px;
 	animation: right 3s ease-in-out;
 
@@ -425,7 +446,7 @@ background-image: linear-gradient(315deg,#7f53ae 10%,#647dee 60%);
 	color: white;
 	position: relative;
 	padding: 10px;
-	width: 103.5%;
+	width: 100%;
 	height: 50px;
 	background: red;
 	margin-left: -7px;
